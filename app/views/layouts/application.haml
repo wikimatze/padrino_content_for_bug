@@ -7,6 +7,8 @@
     = javascript_include_tag 'jquery', 'application'
     = yield_content :include
     %body
+      = yield_content :body_top
+      = partial 'body_top_content'
       #header
         %h1 Sample Padrino Blog
         %ul.menu
