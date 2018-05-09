@@ -9,6 +9,8 @@
     %body
       = yield_content :body_top
       = partial 'body_top_content'
+      %transition{"name"=>"my-transition","enter-class"=>"animated shake","mode"=>"out-in"}
+      = yield_content :body_top
       #header
         %h1 Sample Padrino Blog
         %ul.menu
